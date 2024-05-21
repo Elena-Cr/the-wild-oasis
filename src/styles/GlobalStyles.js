@@ -1,18 +1,6 @@
-/*
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600&display=swap"
-  rel="stylesheet"
-/>
-*/
+import { createGlobalStyle } from "styled-components";
 
-/* Colors adapted from https://tailwindcss.com/docs/customizing-colors */
-
+const GlobalStyles = createGlobalStyle`
 :root {
   /* Indigo */
   --color-brand-50: #eef2ff;
@@ -39,12 +27,16 @@
 
   --color-blue-100: #e0f2fe;
   --color-blue-700: #0369a1;
+
   --color-green-100: #dcfce7;
   --color-green-700: #15803d;
+
   --color-yellow-100: #fef9c3;
   --color-yellow-700: #a16207;
+
   --color-silver-100: #e5e7eb;
   --color-silver-700: #374151;
+  
   --color-indigo-100: #e0e7ff;
   --color-indigo-700: #4338ca;
 
@@ -194,3 +186,5 @@ FOR DARK MODE
 --image-grayscale: 10%;
 --image-opacity: 90%;
 */
+`;
+export default GlobalStyles;
